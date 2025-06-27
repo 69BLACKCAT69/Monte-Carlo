@@ -25,6 +25,13 @@ El simulador funciona en dos etapas consecutivas:
 1.  **Generación de Datos**: Se ejecuta `SIMULACIÓN-1.py`. Este script genera los números pseudoaleatorios necesarios y los guarda en `numeros.txt`.
 2.  **Ejecución de la Simulación**: Se ejecuta `MONTE CARLO.py`. Este script lee los números de `numeros.txt`, carga las distribuciones de los archivos Excel y corre la simulación de la línea de espera.
 
+```mermaid
+graph TD
+    A[Generador Pseudoaleatorio] --> B[Números Aleatorios]
+    B --> C[Simulación de Colas]
+    C --> D[Métricas de Rendimiento]
+```
+
 ## 🛠️ Instalación
 
 1.  Asegúrate de tener Python 3.8 o superior instalado.
